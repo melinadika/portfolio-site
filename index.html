@@ -7,46 +7,61 @@
     <style>
 
     </style>
-    <script>
-
-    </script>
 </head>
 
 <body>
     <header>
     <nav>
-        <a href="#">Home</a> |
+        <a href="#"><svg width="16.35" height="17.5" viewBox="0 0 16.35 17.5" xmlns="http://www.w3.org/2000/svg"><g id="svgGroup" stroke-linecap="round" fill-rule="evenodd" font-size="9pt" stroke="#000" stroke-width="0.25mm" fill="#000" style="stroke:#000;stroke-width:0.25mm;fill:#000"><path d="M 2.25 17.5 L 0 17.5 L 0 0 L 3.325 0 L 8.175 11.075 L 12.95 0 L 16.35 0 L 16.35 17.5 L 13.975 17.5 L 13.975 3.025 L 9.3 13.55 L 6.95 13.55 L 2.25 3.025 L 2.25 17.5 Z" vector-effect="non-scaling-stroke"/></g></svg></a> |
         <a href="#resume">Resume</a> |
-        <a href="#web">On the Web</a> |
-        <a href="important.html">Survey</a>  |
-        <a href="survey.html">Survey</a> 
+        <a href="important.html">Experiments</a>  |
+        <a href="survey.html">Contact</a> 
     </nav>
 </header>
 <main>
     <section>
-        <h1> Hello! My name is <span>Melina Dimitropoulou</span></h1>
-        <h2> I'm currently a second year student at UCSD, studying computer science. Read on to learn more about my expereince and interests!</h2>
+        <picture>
+            <source srcset="pfp.jpg">
+            <source srcset="pfp.png">
+        </picture>
+        <h1> <em>Hello!</em> My name is <span>Melina Dimitropoulou</span></h1>
+        <h2> I'm currently a second year student at UCSD, studying computer science. Welcome to my portfolio site, designed and coded entirely in <code>html</code> and <code>css</code>!</h2>
     </section>
     <section>
         <h2 name="resume"> Resume </h2>
         <h3> Education </h3>
         <hr>
         <h4>
-            <strong>UCSD CSE Department — CS Tutor</strong>
+            <strong>UCSD Computer Science B.S.</strong>
         </h4>
-        <p> <b>GPA:</b> 4.00, Junior Standing: 123.5 credits completed <br>
+        <aside>
+            Class of 2025 <br>
+            <figure>
+                <img src="https://upload.wikimedia.org/wikipedia/commons/1/18/UCSD_Seal.png" height="40px" width="40px" alt="UCSD logo">
+                <figcaption>UCSD Logo</figcaption>
+              </figure>
+        </aside>
+        <pre>
+            <b>GPA:</b>       4.00, Junior Standing: 123.5 credits completed <br>
             <b>Summer 2020:</b> Principles of Data Science (DSC 10) <br>
-            <b>Fall 2021:</b> Accelerated Intro to Programming (CSE 11) <br>
+            <b>Fall 2021:</b>   Accelerated Intro to Programming (CSE 11) <br>
             <b>Winter 2022:</b> Basic Data Structures & Object-Oriented Design (CSE 12), Software Tools & Techniques Laboratory (CSE 15L), Discrete Mathematics (CSE 20) <br>
             <b>Spring 2022:</b> Mathematics for Algorithms and Systems (CSE 21), Computer Organization and Systems Programming (CSE 30) <br>
-            <b>Fall 2022:</b> Components and Design Techniques for Digital Systems and Lab (CSE 140/L), Advanced Data Structures (CSE 100), Statistical Methods (MATH 183) <br>
+            <b>Fall 2022:</b>   Components and Design Techniques for Digital Systems and Lab (CSE 140/L), Advanced Data Structures (CSE 100), Statistical Methods (MATH 183) <br>
             <b>Winter 2023:</b> Theory of Computation (CSE 105), Software Engineering (CSE 110), Database System Principles (CSE 110), Web Client Languages (CSE 134B) <br>
-        </p>
+        </pre>
         <hr>
         <table>
+            <caption>
+                <h3>Experience</h3>
+            </caption>
+            <colgroup>
+                <col span="1"> <!-- to be styled later -->
+                <col> <!-- to be styled later -->
+              </colgroup>
             <tr>
                 <th>
-                    <h3>Work Experience</h3>
+                    <h3>Work</h3>
                 </th>
                 <th>
                     <h3>Projects</h3>
@@ -74,6 +89,7 @@
                             Areas of work: Python based UI with QGIS map display features, multithreaded TCP connection system, drone flight simulator for testing, field based testing, coordinating team members, drone software
                         </li>
                     </ul> 
+                    <button type="button"><a href="https://github.com/UCSD-E4E/radio_collar_tracker_gcs"><em>See GitHub</em></a></button>
                 </td>
             </tr>
             <tr>
@@ -86,6 +102,7 @@
                         <li>
                             Typescript and Svelte
                         </li>
+                        <button type="button"><a href="https://github.com/TritonSE/FIX-Landing-Page"><em>See GitHub</em></a></button>
                     </ul>
                 </td>
                 <td>
@@ -113,7 +130,7 @@
                     </ul>
                 </td>
                 <td>
-                    <strong>Gateways Summer School — <em>Marine Biology Student Aide</em> </strong>
+                    <strong>Gateways Summer School — <i>Marine Biology Student Aide</i> </strong>
                     <ul>
                         <li>
                             Prepped lab spaces, oversaw 3rd-4th grade students during hands-on dissections during a 3 week summer program
@@ -139,5 +156,14 @@
             </td>
         </tr>
     </table>
+    <canvas id="canvas" width="60" height="60">
+        M
+    </canvas>
+    <script>
+        const canvasElement = document.getElementById('canvas');
+        const canvas = canvasElement.getContext('2d');
+        canvas.font = '30px sans serif';
+        canvas.fillText('M', 10, 10)
+    </script>
 </footer>
 </body>

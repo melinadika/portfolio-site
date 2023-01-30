@@ -11,11 +11,18 @@
 <body>
     <header>
         <nav>
-            <a href="index.html">Home</a> |
+            <a href="index.html"><svg width="16.35" height="17.5" viewBox="0 0 16.35 17.5"
+                    xmlns="http://www.w3.org/2000/svg">
+                    <g id="svgGroup" stroke-linecap="round" fill-rule="evenodd" font-size="9pt" stroke="#000"
+                        stroke-width="0.25mm" fill="#000" style="stroke:#000;stroke-width:0.25mm;fill:#000">
+                        <path
+                            d="M 2.25 17.5 L 0 17.5 L 0 0 L 3.325 0 L 8.175 11.075 L 12.95 0 L 16.35 0 L 16.35 17.5 L 13.975 17.5 L 13.975 3.025 L 9.3 13.55 L 6.95 13.55 L 2.25 3.025 L 2.25 17.5 Z"
+                            vector-effect="non-scaling-stroke" />
+                    </g>
+                </svg></a> |
             <a href="index.html/#resume">Resume</a> |
-            <a href="#web">On the Web</a> |
-            <a href="important.html">Important Topic</a> |
-            <a href="#">Survey</a>
+            <a href="important.html">Experiments</a> |
+            <a href="#">Contact</a>
         </nav>
     </header>
     <main>
@@ -23,37 +30,50 @@
         <form action="#" method="get">
             <fieldset>
                 <legend>Your Info</legend>
-                <label for="title">Title:</label>
-                <datalist id="title">
-                    <option>Mr.</option>
-                    <option>Mrs.</option>
-                    <option>Ms.</option>
-                    <option>Dr.</option>
-                </datalist>
-                <label for="name">Name:</label>
-                <input type="text" id="name"><br><br>
-                <label for="email">Email:</label>
-                <input type="email" id ="email"><br><br>
-                <label for="message">Message:</label>
-                <textarea id="message"></textarea><br>
-                <label for="info">I am a:</label>
-                <select id="info">
-                    <optgroup label="Academic">
-                        <option>Student</option>
-                        <option>Professor</option>
-                        <option>TA</option>
-                    </optgroup>
-                    <optgroup label="Professional">
-                        <option>Hiring Manager</option>
-                        <option>Recruiter</option>
-                        <option>Tech Employee</option>
-                    </optgroup>
-                </select>
+                <ol>
+                    <li>
+                        <label for="title">Title:</label>
+                        <input list="titles" id="title">
+                        <datalist id="titles">
+                            <option>Mr.</option>
+                            <option>Mrs.</option>
+                            <option>Ms.</option>
+                            <option>Dr.</option>
+                        </datalist>
+                    </li>
+                    <li>
+                        <label for="name">Name:</label>
+                        <input type="text" id="name">
+                    </li>
+                    <li>
+                        <label for="email">Email:</label>
+                        <input type="email" id="email">
+                    </li>
+                    <li>
+                        <label for="message">Message:</label>
+                        <textarea id="message"></textarea>
+                    </li>
+                    <li>
+                        <label for="info">I am a:</label>
+                        <select id="info">
+                            <optgroup label="Academic">
+                                <option>Student</option>
+                                <option>Professor</option>
+                                <option>TA</option>
+                            </optgroup>
+                            <optgroup label="Professional">
+                                <option>Hiring Manager</option>
+                                <option>Recruiter</option>
+                                <option>Tech Employee</option>
+                            </optgroup>
+                        </select>
+                    </li>
+                </ol>
                 <input type="submit" value="Submit">
 
             </fieldset>
         </form>
-        <template>
+        <template> <!-- to be styled later -->
             <div id="animation">Thank you! You're response has been recorded!</div>
         </template>
     </main>
