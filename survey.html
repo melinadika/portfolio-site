@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <title>Portfolio Survey</title>
+    <link rel="icon" href="favicon.ico" />
+
+</head>
+
+<body>
+    <header>
+        <nav>
+            <a href="index.html">Home</a> |
+            <a href="index.html/#resume">Resume</a> |
+            <a href="#web">On the Web</a> |
+            <a href="important.html">Important Topic</a> |
+            <a href="#">Survey</a>
+        </nav>
+    </header>
+    <main>
+        <h1>Contact Me</h1>
+        <form action="#" method="get">
+            <fieldset>
+                <legend>Your Info</legend>
+                <label for="title">Title:</label>
+                <datalist id="title">
+                    <option>Mr.</option>
+                    <option>Mrs.</option>
+                    <option>Ms.</option>
+                    <option>Dr.</option>
+                </datalist>
+                <label for="name">Name:</label>
+                <input type="text" id="name"><br><br>
+                <label for="email">Email:</label>
+                <input type="email" id ="email"><br><br>
+                <label for="message">Message:</label>
+                <textarea id="message"></textarea><br>
+                <label for="info">I am a:</label>
+                <select id="info">
+                    <optgroup label="Academic">
+                        <option>Student</option>
+                        <option>Professor</option>
+                        <option>TA</option>
+                    </optgroup>
+                    <optgroup label="Professional">
+                        <option>Hiring Manager</option>
+                        <option>Recruiter</option>
+                        <option>Tech Employee</option>
+                    </optgroup>
+                </select>
+                <input type="submit" value="Submit">
+
+            </fieldset>
+        </form>
+        <template>
+            <div id="animation">Thank you! You're response has been recorded!</div>
+        </template>
+    </main>
+    <footer>
+        <table>
+            <tr>
+                <td>
+                    <a href="https://www.linkedin.com/in/melina-dimitropoulou-19549120b/">LinkedIn</a>
+                </td>
+                <td>
+                    <a href="https://github.com/melinadika">GitHub</a>
+                </td>
+                <td>
+                    <a href="mailto:donotemail@gmail.com">email</a>
+                </td>
+            </tr>
+        </table>
+    </footer>
+</body>
